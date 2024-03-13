@@ -26,7 +26,8 @@ router.post("/addorder", async (req, res) => {
         customer: req.body.customer,
         salesPerson: req.body.salesPerson,
         paymentType: req.body.paymentType,
-        notes: req.body.notes
+        notes: req.body.notes,
+        products: req.body.products
     })
 
     try {

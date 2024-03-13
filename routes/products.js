@@ -6,6 +6,8 @@ router.post("/addproducts", async (req, res) => {
         item: req.body.item,
         quantity: req.body.quantity,
         totalCogs: req.body.totalCogs,
+        img: req.body.img,
+        stock: req.body.stock,
     })
 
     try {

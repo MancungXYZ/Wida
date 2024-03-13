@@ -7,7 +7,20 @@ const Orders = new mongoose.Schema({
     salesPerson: {type: String},
     paymentType: {type: String},
     notes: {type: String},
-    products: {type: Array},
+    products: [
+        {
+            item: {
+                type: String
+            },
+            totalCogs: {
+                type: Number
+            },
+            quantity:{
+                type: Number,
+                default: 1,
+            },
+        },
+    ],
     amount: {type: Number}
 }, {timestamps: true},
 );
